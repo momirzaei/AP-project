@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.Employee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Employee" Height="450" Width="800">
+    <Grid Background="BurlyWood">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Employee_Books" Grid.Row="0" Content="Books " VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="Employee_BooksBTN1_Click" Height="48" Margin="58,0,0,25" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="Employee_Edit_Information" Grid.Row="3" Content="Edit Information " VerticalAlignment="Bottom" HorizontalAlignment="Right"   Click="Employee_Edit_InformationBTN3_Click" Height="65" Margin="0,0,10,10" Width="230" FontSize="24" FontFamily="Segoe UI Black"/>
+        <Button x:Name="Employee_Member" Grid.Row="1" Content="Member " VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="Employee_MemberBTN3_Click" Height="48" Margin="58,0,0,25" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="Employee_wallet" Grid.Row="2" Content="wallet " VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="Employee_walletBTN3_Click" Height="48" Margin="58,0,0,25" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="Employee_Back_02" Grid.Row="3" Content="Back" VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="Employee_BackBTN_Click_02" Height="40" Margin="10,0,0,10" Width="150" FontSize="24" FontFamily="Segoe UI Black"/>
+    </Grid>
+</Window>
