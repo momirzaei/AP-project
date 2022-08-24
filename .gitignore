@@ -1,5 +1,5 @@
 WpfApp1.sln
-WpfApp1/bin/
-WpfApp1/obj/
+bin/
+obj/
 WpfApp1.csproj
 WpfApp1.csproj.user
