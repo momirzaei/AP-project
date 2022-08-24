@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+         Title="MainWindow" Height="500" Width="800" WindowStartupLocation="CenterScreen" >
+    <Grid Background="GreenYellow">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition />
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+            </Grid>
+            <TextBlock Text="LIBRARY" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" FontFamily="Bodoni MT Black"/>
+            <StackPanel  Grid.Row="1" VerticalAlignment="Center" Margin="20,0">
+                <TextBlock Text="User_Name" FontSize="30" FontFamily="Arial Black" />
+                <TextBox x:Name="User_NameBOX" Height="50" FontSize="24" />
+            </StackPanel>
+            <StackPanel  Grid.Row="2" VerticalAlignment="Center" Margin="20,0">
+                <TextBlock Text="password" FontSize="30" FontWeight="Bold" FontFamily="Arial Black" />
+                <PasswordBox x:Name="Password_login" Height="50" FontSize="24"/>
+            </StackPanel>
+            <Button x:Name="signinBTN_0" Grid.Row="3" Content="sign in " VerticalAlignment="Top" HorizontalAlignment="Left"   Click="signinBTN_Click1" Height="52" Margin="520,47,0,0" Width="119" FontSize="20"/>
+            <Button x:Name="signupBTN_0" Grid.Row="3" Content="sign up " VerticalAlignment="Top" HorizontalAlignment="Left"   Click="signupBTN_Click2"  FontSize="20" Margin="192,47,0,0" Height="52" Width="119"/>
+        </Grid>
+
+    </Grid>
+</Window>
