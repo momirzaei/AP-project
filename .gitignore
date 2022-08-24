@@ -3,3 +3,4 @@ bin/
 obj/
 WpfApp1.csproj
 WpfApp1.csproj.user
+AssemblyInfo.cs
