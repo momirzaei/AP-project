@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp1.mainpayment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="mainpayment" Height="450" Width="600">
+    <Grid Background="BurlyWood">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <TextBlock FontSize="30" Text="amount :"/>
+            <TextBox x:Name="AMOUNT" Margin="191,10,67,30" FontSize="30"  Background="WhiteSmoke"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <TextBlock FontSize="30" Text="card number :"/>
+            <TextBox x:Name="CARDNUMBER" Margin="191,10,22,30" FontSize="30" Background="WhiteSmoke"/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <TextBlock FontSize="30">CVV :</TextBlock>
+            <TextBox x:Name="CVV" Margin="136,10,93,30" FontSize="30" Background="WhiteSmoke"/>
+        </Grid>
+        <Grid Grid.Row="4">
+            <TextBlock FontSize="30" Text="Expiration :"/>
+            <TextBox x:Name="yearEXE" Margin="175,20,300,20" FontSize="30" Background="WhiteSmoke"/>
+            <TextBox x:Name="monthEXE" Margin="323,20,148,20" FontSize="30" Background="WhiteSmoke"/>
+
+        </Grid>
+        <Grid Grid.Row="5">
+            <Button x:Name="PAYENTER" Margin="224,17,224,17" Content="ENTER" FontSize="30" Click="PAYENTER_Click"/>
+
+        </Grid>
+    </Grid>
+</Window>
