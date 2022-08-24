@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.MyBooks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MyBooks" Height="450" Width="800">
+    <Grid Background="BurlyWood">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Return_the_book" Grid.Column="1" Content="Return the book" VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="Return_the_bookBTN_Click1" Height="48" Margin="25,0,0,10" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="MyBooks_Back_03" Content="Back" VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="MyBooks_BackBTN_Click_03" Height="40" Margin="10,0,0,10" Width="150" FontSize="24" FontFamily="Segoe UI Black"/>
+    </Grid>
+</Window>
