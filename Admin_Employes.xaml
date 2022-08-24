@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.Admin_Employes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Admin_Employes" Height="600" Width="800">
+    <Grid Background="BurlyWood">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="add_01" Grid.Row="0" Content="Add" VerticalAlignment="Bottom" HorizontalAlignment="Center"   Click="Admin_Employes_Add_Click_01" Height="48" Margin="276,0,260,10" Width="256" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="payment_01" Grid.Row="2" Content="payment" VerticalAlignment="Bottom" HorizontalAlignment="Center"   Click="Admin_Employes_payment_Click_01" Height="48" Margin="275,0,260,23" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+
+        <ScrollViewer Grid.Row="1">
+            <DataGrid x:Name="EMP_datagrid" AutoGenerateColumns="True" Margin="0,20,100,50" Width="496" />
+        </ScrollViewer>
+        <Button x:Name="deleteEMP_BTN" Content="delete" HorizontalAlignment="Left" Margin="655,264,0,0" Grid.Row="1" VerticalAlignment="Top" Height="60" Width="82" FontSize="16" FontWeight="Bold" Click="deleteEMP_BTN_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="626,39,0,0" Grid.Row="1" Text="please  insert  name of employee you want to delete:" TextWrapping="Wrap" VerticalAlignment="Top" Height="116" Width="140" FontSize="20"/>
+        <TextBox x:Name="deleteEMP" HorizontalAlignment="Left" Margin="636,209,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="28" FontSize="16"/>
+    </Grid>
+</Window>
