@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.Login_members"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Login_members" Height="450" Width="800">
+    <Grid Background="BurlyWood">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Member_Books_03" Grid.Row="0" Content="Books " VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="member_Books_BTN_Click_03" Height="64" Margin="493,0,0,10" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="Member_My_Books_03" Grid.Row="1" Content="My_Books " VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="Member_My_BooksBTN_Click" Height="64" Margin="58,0,0,10" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="Member_Subscription_03" Grid.Row="2" Content="Subscription " VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="Member_SubscriptionBTN_Click" Height="64" Margin="493,0,0,10" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="Member_Wallet_03" Grid.Row="3" Content="Wallet " VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="Member_WalletBTN_Click_03" Height="64" Margin="58,0,0,10" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="Member_editing_information_03" Grid.Row="4" Content="editing information " VerticalAlignment="Bottom" HorizontalAlignment="Left"   Click="Member_editing_informationBTN_Click_03" Height="64" Margin="493,0,0,10" Width="257" FontSize="24" FontFamily="Segoe UI Black" Background="DarkOrchid"/>
+        <Button x:Name="Login_members_Back_03" Grid.Row="4" Content="Back" VerticalAlignment="Top" HorizontalAlignment="Left"   Click="Login_members_BackBTN_Click_03" Height="40" Margin="46,34,0,0" Width="150" FontSize="24" FontFamily="Segoe UI Black"/>
+    </Grid>
+</Window>
